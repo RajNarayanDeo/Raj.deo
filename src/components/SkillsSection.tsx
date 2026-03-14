@@ -3,19 +3,27 @@ import { motion } from "framer-motion";
 const skillCategories = [
   {
     title: "Product & Strategy",
-    skills: ["Product Management", "Strategic Planning", "Roadmap Execution", "Backlog Management", "PI Planning"],
+    skills: ["Product Management", "Strategic Planning", "Roadmap Execution", "Backlog Management", "PI Planning", "Go-to-Market Strategy", "Product-Market Fit"],
   },
   {
     title: "Agile & Frameworks",
-    skills: ["Scrum Master", "SAFe 6 PO/PM", "Sprint Planning", "Release Management", "SDLC"],
+    skills: ["Scrum Master", "SAFe 6 PO/PM", "Sprint Planning", "Release Management", "SDLC", "Design Thinking", "Lean Startup"],
+  },
+  {
+    title: "AI / ML & Data",
+    skills: ["Prompt Engineering", "LLM Fine-Tuning", "NLP", "Computer Vision", "ML Model Evaluation", "A/B Testing", "Data Labeling & Annotation", "AI Ethics & Responsible AI", "RAG Pipelines"],
   },
   {
     title: "Technical Skills",
-    skills: ["Python", "SQL", "API", "UI/UX", "Power BI", "Power Query", "Power Pivot"],
+    skills: ["Python", "SQL", "API", "UI/UX", "Power BI", "Power Query", "Power Pivot", "Cloud Computing (AWS/GCP)", "MLOps Basics"],
+  },
+  {
+    title: "AI Tools & Platforms",
+    skills: ["OpenAI API", "Hugging Face", "LangChain", "TensorFlow/PyTorch Basics", "Vertex AI", "Amazon SageMaker", "Vector Databases"],
   },
   {
     title: "Tools & Platforms",
-    skills: ["JIRA", "Polarian", "Data Analytics", "MIS Reporting"],
+    skills: ["JIRA", "Polarian", "Data Analytics", "MIS Reporting", "Figma", "Mixpanel", "Amplitude"],
   },
 ];
 
