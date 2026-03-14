@@ -43,6 +43,13 @@
     --font-display: 'Playfair Display', serif;
     --font-body: 'Source Sans 3', sans-serif;
 
+    --v2-bg: 220 15% 8%;
+    --v2-text: 40 20% 92%;
+    --v2-muted: 220 10% 55%;
+    --v2-accent: 38 95% 55%;
+    --v2-accent-hover: 38 95% 62%;
+    --v2-border: 220 12% 18%;
+
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
