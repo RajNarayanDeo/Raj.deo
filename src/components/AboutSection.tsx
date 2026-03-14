@@ -1,55 +1,54 @@
 import { motion } from "framer-motion";
-import { Target, Users, BarChart3, Zap, Layers, UserCheck } from "lucide-react";
+import { Target, Users, BarChart3, Zap } from "lucide-react";
 
-const cards = [
-  { icon: Target, title: "Product Strategy", desc: "Roadmap execution & innovative product launches driving business growth across domains." },
-  { icon: Users, title: "Agile Leadership", desc: "Leading 3 cross-functional teams across multiple product lines with SAFe framework." },
-  { icon: BarChart3, title: "Data Analytics", desc: "Evidence-based decisions using Power BI, SQL, and advanced visualization techniques." },
-  { icon: Zap, title: "Customer-Centric", desc: "25% engagement increase through continuous customer feedback integration." },
-  { icon: Layers, title: "Clinical Technology", desc: "Building web & desktop applications for healthcare improving patient care." },
-  { icon: UserCheck, title: "Stakeholder Management", desc: "Fostering collaboration among engineering, design, QA, and business teams." },
+const highlights = [
+  { icon: Target, label: "Product Strategy", desc: "Roadmap execution & innovative product launches" },
+  { icon: Users, label: "Agile Leadership", desc: "Leading cross-functional teams across multiple product lines" },
+  { icon: BarChart3, label: "Data-Driven", desc: "Evidence-based decisions with analytics & visualization" },
+  { icon: Zap, label: "Customer-Centric", desc: "25% user engagement boost through continuous feedback" },
 ];
 
 const AboutSection = () => (
-  <section id="about" className="section-padding">
+  <section id="about" className="section-padding bg-background">
     <div className="container mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16"
+        transition={{ duration: 0.6 }}
+        className="text-center mb-16"
       >
-        <p className="font-mono text-xs text-primary tracking-[0.2em] uppercase mb-4">About Me</p>
-        <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight">
-          I don't just manage products.<br />
-          <span className="italic text-accent">I craft their success.</span>
-        </h2>
+        <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">About Me</h2>
+        <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
       </motion.div>
 
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="text-muted-foreground leading-relaxed max-w-3xl mb-16 text-lg"
-      >
-        Senior Product Owner with 11+ years of comprehensive experience in product management, 
-        with a strong focus on strategic planning, roadmap execution, and launching innovative products 
-        that drive customer satisfaction and business growth across healthcare and education industries.
-      </motion.p>
+      <div className="max-w-3xl mx-auto mb-16">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-lg text-muted-foreground leading-relaxed text-center"
+        >
+          Cultivated a robust career in Product Management, focusing on spearheading product development projects that prioritize customer needs and leverage Agile methodologies, particularly in the healthcare and education industries. Proficient in managing the complete SDLC, including requirement gathering, user story creation, backlog grooming, sprint planning, and release management.
+        </motion.p>
+      </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-lg overflow-hidden">
-        {cards.map((card, i) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {highlights.map((item, i) => (
           <motion.div
-            key={card.title}
-            initial={{ opacity: 0, y: 20 }}
+            key={item.label}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: i * 0.08 }}
-            className="bg-card p-8 group hover:bg-secondary transition-colors duration-500"
+            transition={{ duration: 0.5, delay: i * 0.1 }}
+            className="bg-card rounded-xl p-6 shadow-card hover:shadow-card-hover transition-shadow duration-300 text-center group"
           >
-            <card.icon size={22} className="text-primary mb-4" />
-            <h3 className="font-display text-lg font-bold mb-2">{card.title}</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
+            <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+              <item.icon className="text-primary" size={26} />
+            </div>
+            <h3 className="font-display text-lg font-semibold mb-2">{item.label}</h3>
+            <p className="text-sm text-muted-foreground">{item.desc}</p>
           </motion.div>
         ))}
       </div>

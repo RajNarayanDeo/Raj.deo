@@ -14,26 +14,24 @@ const certifications = [
 ];
 
 const EducationSection = () => (
-  <section id="education" className="section-padding">
+  <section id="education" className="section-padding bg-muted/50">
     <div className="container mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16"
+        className="text-center mb-16"
       >
-        <p className="font-mono text-xs text-primary tracking-[0.2em] uppercase mb-4">Credentials</p>
-        <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight">
-          Education & <span className="italic text-accent">Certifications.</span>
-        </h2>
+        <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">Education & Certifications</h2>
+        <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
       </motion.div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        {/* Education */}
         <div>
-          <div className="flex items-center gap-3 mb-8">
-            <GraduationCap className="text-primary" size={22} />
-            <h3 className="font-mono text-xs text-primary tracking-[0.2em] uppercase">Education</h3>
-          </div>
+          <h3 className="font-display text-2xl font-bold mb-6 flex items-center gap-3">
+            <GraduationCap className="text-primary" size={28} /> Education
+          </h3>
           <div className="space-y-6">
             {education.map((edu, i) => (
               <motion.div
@@ -42,21 +40,21 @@ const EducationSection = () => (
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15 }}
-                className="border-l-2 border-primary/30 pl-6 py-2"
+                className="bg-card rounded-xl p-6 shadow-card"
               >
-                <span className="font-mono text-[10px] text-muted-foreground tracking-wider uppercase">{edu.year}</span>
-                <h4 className="font-display text-xl font-bold mt-1">{edu.degree}</h4>
-                <p className="text-sm text-muted-foreground mt-1">{edu.school}</p>
+                <p className="text-xs text-muted-foreground font-semibold tracking-wider uppercase mb-1">{edu.year}</p>
+                <h4 className="font-display text-lg font-bold">{edu.degree}</h4>
+                <p className="text-sm text-primary">{edu.school}</p>
               </motion.div>
             ))}
           </div>
         </div>
 
+        {/* Certifications */}
         <div>
-          <div className="flex items-center gap-3 mb-8">
-            <Award className="text-primary" size={22} />
-            <h3 className="font-mono text-xs text-primary tracking-[0.2em] uppercase">Certifications</h3>
-          </div>
+          <h3 className="font-display text-2xl font-bold mb-6 flex items-center gap-3">
+            <Award className="text-primary" size={28} /> Certifications
+          </h3>
           <div className="space-y-4">
             {certifications.map((cert, i) => (
               <motion.div
@@ -65,10 +63,10 @@ const EducationSection = () => (
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="flex items-center justify-between border border-border rounded-lg p-5 hover:bg-secondary/50 transition-colors"
+                className="bg-card rounded-xl p-5 shadow-card flex items-center justify-between"
               >
-                <span className="font-medium">{cert.name}</span>
-                <span className="font-mono text-xs text-muted-foreground">{cert.year}</span>
+                <h4 className="font-semibold">{cert.name}</h4>
+                <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-semibold">{cert.year}</span>
               </motion.div>
             ))}
           </div>

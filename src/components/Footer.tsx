@@ -1,10 +1,8 @@
 const Footer = () => (
-  <footer className="border-t border-border py-8 px-6">
-    <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-      <span className="font-display text-lg font-bold italic">RND.</span>
-      <p className="font-mono text-[10px] text-muted-foreground tracking-wider">
-        © {new Date().getFullYear()} Raj Narayan Deo. All rights reserved.
-      </p>
+  <footer className="bg-foreground text-background/70 py-8 px-6">
+    <div className="container mx-auto text-center">
+      <p className="font-display text-lg font-bold text-background mb-2">Raj Narayan Deo</p>
+      <p className="text-sm">© {new Date().getFullYear()} All rights reserved.</p>
     </div>
   </footer>
 );
