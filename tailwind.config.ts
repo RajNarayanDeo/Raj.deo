@@ -16,6 +16,8 @@ export default {
       fontFamily: {
         display: ['Playfair Display', 'serif'],
         body: ['Source Sans 3', 'sans-serif'],
+        'v2-heading': ['Space Grotesk', 'sans-serif'],
+        'v2-body': ['Inter', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -50,6 +52,16 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        v2: {
+          bg: "hsl(var(--v2-bg))",
+          text: "hsl(var(--v2-text))",
+          muted: "hsl(var(--v2-muted))",
+          accent: {
+            DEFAULT: "hsl(var(--v2-accent))",
+            hover: "hsl(var(--v2-accent-hover))",
+          },
+          border: "hsl(var(--v2-border))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
