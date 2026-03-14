@@ -1,58 +1,62 @@
 import { motion } from "framer-motion";
-import { Rocket, TrendingUp, Users, Clock, BarChart3, Smartphone } from "lucide-react";
+import { FileText, ExternalLink, ShoppingCart, MessageCircle, Package, UtensilsCrossed } from "lucide-react";
 
 const projects = [
   {
-    icon: Rocket,
-    title: "Clinical Trial Platform Overhaul",
-    org: "Clario",
-    tags: ["Healthcare", "SAFe Agile", "Web & Desktop"],
+    icon: UtensilsCrossed,
+    title: "Swiggy Product Teardown",
+    subtitle: "Improving Customer Retention",
+    tags: ["Food Delivery", "Retention Strategy", "UX Analysis"],
     description:
-      "Re-architected 3 clinical-trial applications, cutting study build time from 10 weeks to just 3 weeks while delivering 100% committed business value across every Program Increment.",
+      "A comprehensive teardown of Swiggy's platform analyzing customer retention challenges (stuck at 40%). Proposed data-driven solutions including personalized recommendations, gamification, and loyalty programs to boost repeat orders.",
     metrics: [
-      { label: "Build Time Reduction", value: "70%" },
-      { label: "Features Launched", value: "15+" },
-      { label: "Business Value", value: "100%" },
+      { label: "Retention Rate", value: "40%" },
+      { label: "Cities Covered", value: "500+" },
+      { label: "Restaurant Partners", value: "200K+" },
     ],
+    pdf: "/case-studies/Swiggy_Teardown.pdf",
   },
   {
-    icon: Smartphone,
-    title: "Mobile App Redesign & Engagement Boost",
-    org: "BYJU'S",
-    tags: ["EdTech", "Mobile", "UX Research"],
+    icon: MessageCircle,
+    title: "WhatsApp Status Enhancement",
+    subtitle: "Boosting Engagement & Discoverability",
+    tags: ["Social Media", "Feature Design", "User Research"],
     description:
-      "Led a full mobile app redesign for UPSC preparation programs on the BEP App and Tablet, driving a 70% increase in user engagement and retention through data-driven UX improvements.",
+      "Analyzed pain points in WhatsApp Status for casual users and SMBs — limited engagement tools, no analytics, and poor discoverability. Proposed polls, scheduled posts, CTA buttons, and selective sharing to drive engagement among 450M+ Status users.",
     metrics: [
-      { label: "Engagement Lift", value: "70%" },
-      { label: "Complaint Reduction", value: "70%" },
-      { label: "Platforms", value: "App + Tablet" },
+      { label: "Global Users", value: "3B+" },
+      { label: "Status Users", value: "450M+" },
+      { label: "Countries", value: "180" },
     ],
+    pdf: "/case-studies/Whatsapp_Status.pdf",
   },
   {
-    icon: BarChart3,
-    title: "UPSC & State PSC Program Launches",
-    org: "BYJU'S",
-    tags: ["Product Launch", "Content Strategy", "KPI Analytics"],
+    icon: ShoppingCart,
+    title: "Amazon — Reducing Choice Overload",
+    subtitle: "Tackling Decision Fatigue in E-Commerce",
+    tags: ["E-Commerce", "Decision Science", "UX/UI"],
     description:
-      "Deployed end-to-end UPSC, BPSC & UPPSC programs, managing cross-functional teams of 20+ members. Analyzed KPIs to optimise marketing campaigns and boost product adoption across multiple states.",
+      "Explored how excessive product choices on Amazon cause decision fatigue, leading to 35% cart abandonment and 56% visitor drop-off. Proposed AI-powered curated shortlists, smarter filters, and trust-verified reviews to simplify purchasing decisions.",
     metrics: [
-      { label: "Programs Launched", value: "3" },
-      { label: "Team Size", value: "20+" },
-      { label: "User Growth", value: "25%" },
+      { label: "Cart Abandonment", value: "35%" },
+      { label: "Filter Dissatisfied", value: "44%" },
+      { label: "Distrust Reviews", value: "75%" },
     ],
+    pdf: "/case-studies/Amazon_Decision_Fatigue.pdf",
   },
   {
-    icon: Users,
-    title: "Land Acquisition & CSR — Thermal Power Plant",
-    org: "Tata Power",
-    tags: ["Infrastructure", "Stakeholder Mgmt", "MIS"],
+    icon: Package,
+    title: "Blinkit Product Strategy",
+    subtitle: "Scaling Quick Commerce Leadership",
+    tags: ["Quick Commerce", "Growth Strategy", "Competitive Analysis"],
     description:
-      "Managed acquisition of 1,500 acres for the Tiruldih Thermal Power Plant (3×660 MW), establishing a Management Information System for project tracking and contributing to CSR initiatives.",
+      "Strategic analysis of Blinkit's 45% market share dominance in quick commerce. Identified AOV gap vs Zepto (₹460 vs ₹607), proposed subscription models, city expansion, and dark-store optimisation to strengthen unit economics and retention.",
     metrics: [
-      { label: "Land Acquired", value: "1,500 ac" },
-      { label: "Plant Capacity", value: "1,980 MW" },
-      { label: "MIS Setup", value: "✓" },
+      { label: "Market Share", value: "45%" },
+      { label: "Dark Stores", value: "639" },
+      { label: "Avg Delivery", value: "9 min" },
     ],
+    pdf: "/case-studies/Blinkit_Product_Strategy.pdf",
   },
 ];
 
@@ -69,7 +73,7 @@ const ProjectsSection = () => (
           Projects &amp; Case Studies
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          Key product launches and initiatives that delivered measurable impact.
+          Product teardowns and strategic analyses — submitted by Raj Narayan Deo.
         </p>
         <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
       </motion.div>
@@ -84,9 +88,9 @@ const ProjectsSection = () => (
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-card rounded-xl p-6 shadow-card hover:shadow-card-hover transition-shadow group"
+              className="bg-card rounded-xl p-6 shadow-card hover:shadow-card-hover transition-shadow group flex flex-col"
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-1">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                   <Icon size={20} />
                 </div>
@@ -94,9 +98,13 @@ const ProjectsSection = () => (
                   <h3 className="font-display text-lg font-bold leading-tight">
                     {project.title}
                   </h3>
-                  <span className="text-xs text-primary font-semibold">{project.org}</span>
+                  <span className="text-xs text-primary font-semibold">{project.subtitle}</span>
                 </div>
               </div>
+
+              <p className="text-[11px] text-muted-foreground mb-3 pl-[52px]">
+                By Raj Narayan Deo
+              </p>
 
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tags.map((tag) => (
@@ -109,11 +117,11 @@ const ProjectsSection = () => (
                 ))}
               </div>
 
-              <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+              <p className="text-sm text-muted-foreground leading-relaxed mb-5 flex-1">
                 {project.description}
               </p>
 
-              <div className="grid grid-cols-3 gap-3 border-t border-border pt-4">
+              <div className="grid grid-cols-3 gap-3 border-t border-border pt-4 mb-4">
                 {project.metrics.map((m) => (
                   <div key={m.label} className="text-center">
                     <p className="font-display text-xl font-bold text-primary">{m.value}</p>
@@ -123,6 +131,15 @@ const ProjectsSection = () => (
                   </div>
                 ))}
               </div>
+
+              <a
+                href={project.pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
+              >
+                <FileText size={16} /> View Full Case Study <ExternalLink size={14} />
+              </a>
             </motion.div>
           );
         })}
