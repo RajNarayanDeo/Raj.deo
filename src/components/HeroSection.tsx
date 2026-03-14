@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Mail, Phone } from "lucide-react";
+import { ArrowDown, Download, Mail, Phone } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import profileImg from "@/assets/profile-placeholder.png";
 
