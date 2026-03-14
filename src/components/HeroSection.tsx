@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Mail, Phone } from "lucide-react";
+import { ArrowDown, Download, Mail, Phone } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import profileImg from "@/assets/profile-placeholder.png";
 
@@ -40,6 +40,13 @@ const HeroSection = () => {
               className="inline-flex items-center gap-2 border border-primary-foreground/30 text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-primary-foreground/10 transition-colors"
             >
               <Phone size={18} /> +91 8447228045
+            </a>
+            <a
+              href="/Resume_Raj_Narayan_Deo.pdf"
+              download
+              className="inline-flex items-center gap-2 border border-primary-foreground/30 text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-primary-foreground/10 transition-colors"
+            >
+              <Download size={18} /> Download Resume
             </a>
           </div>
         </motion.div>
