@@ -7,8 +7,8 @@ const projects = [
     subtitle: "Improving Customer Retention",
     tags: ["Food Delivery", "Retention Strategy", "UX Analysis"],
     description:
-      "Comprehensive teardown analyzing customer retention challenges (stuck at 40%). Proposed data-driven solutions including personalized recommendations, gamification, and loyalty programs.",
-    stats: ["40% Retention Rate", "500+ Cities", "200K+ Partners"],
+      "Comprehensive teardown analyzing why retention is stuck at 40%, with users ordering only on weekends. Proposed personalized recommendations, gamification, loyalty programs, and smart nudges to maximize CLTV.",
+    stats: ["40% Retention Rate", "500+ Cities", "45-50% Market Share"],
     pdf: "/case-studies/Swiggy_Teardown.pdf",
   },
   {
@@ -16,8 +16,8 @@ const projects = [
     subtitle: "Boosting Engagement & Discoverability",
     tags: ["Social Media", "Feature Design", "User Research"],
     description:
-      "Analyzed pain points in WhatsApp Status for casual users and SMBs. Proposed polls, scheduled posts, CTA buttons, and selective sharing to drive engagement among 450M+ Status users.",
-    stats: ["3B+ Users", "450M+ Status Users", "180 Countries"],
+      "Analyzed pain points across casual posters, power users, and SMBs. Proposed polls, scheduled posts, CTA buttons, mentions/tagging, and selective sharing to drive engagement among 500M+ Status users.",
+    stats: ["3B+ Users", "500M+ Status Users", "100B+ Daily Messages"],
     pdf: "/case-studies/Whatsapp_Status.pdf",
   },
   {
@@ -25,8 +25,8 @@ const projects = [
     subtitle: "Tackling Decision Fatigue",
     tags: ["E-Commerce", "Decision Science", "UX/UI"],
     description:
-      "Explored how excessive product choices cause decision fatigue leading to 35% cart abandonment. Proposed AI-powered curated shortlists, smarter filters, and trust-verified reviews.",
-    stats: ["35% Cart Abandonment", "44% Filter Issues", "75% Review Distrust"],
+      "Explored how excessive choices cause cognitive overload leading to 35% cart abandonment and 56% visitor drop-off. Proposed AI-powered curated shortlists, smarter filters, and trust-verified reviews.",
+    stats: ["35% Cart Abandonment", "56% Visitor Drop-off", "75% Review Distrust"],
     pdf: "/case-studies/Amazon_Decision_Fatigue.pdf",
   },
   {
@@ -34,8 +34,8 @@ const projects = [
     subtitle: "Scaling Quick Commerce",
     tags: ["Quick Commerce", "Growth Strategy", "Competitive Analysis"],
     description:
-      "Strategic analysis of Blinkit's 45% market share dominance. Identified AOV gap vs Zepto (₹460 vs ₹607), proposed subscription models and dark-store optimisation.",
-    stats: ["45% Market Share", "639 Dark Stores", "9 min Avg Delivery"],
+      "Strategic analysis of Blinkit's 45% market share with 639 dark stores across 39 cities. Identified AOV gap vs Zepto (₹460 vs ₹607), proposed subscription models and dark-store optimisation.",
+    stats: ["45% Market Share", "639 Dark Stores", "6L+ Daily Orders"],
     pdf: "/case-studies/Blinkit_Product_Strategy.pdf",
   },
 ];

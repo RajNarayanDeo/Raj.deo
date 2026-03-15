@@ -8,11 +8,11 @@ const projects = [
     subtitle: "Improving Customer Retention",
     tags: ["Food Delivery", "Retention Strategy", "UX Analysis"],
     description:
-      "A comprehensive teardown of Swiggy's platform analyzing customer retention challenges (stuck at 40%). Proposed data-driven solutions including personalized recommendations, gamification, and loyalty programs to boost repeat orders.",
+      "A comprehensive teardown of Swiggy's platform analyzing why customer retention is stuck at 40%, with users ordering only on weekends or special occasions. Proposed data-driven solutions including personalized recommendations, gamification, loyalty programs, and smart nudges to boost repeat orders and maximize CLTV.",
     metrics: [
       { label: "Retention Rate", value: "40%" },
       { label: "Cities Covered", value: "500+" },
-      { label: "Restaurant Partners", value: "200K+" },
+      { label: "Market Share", value: "45-50%" },
     ],
     pdf: "/case-studies/Swiggy_Teardown.pdf",
   },
@@ -22,11 +22,11 @@ const projects = [
     subtitle: "Boosting Engagement & Discoverability",
     tags: ["Social Media", "Feature Design", "User Research"],
     description:
-      "Analyzed pain points in WhatsApp Status for casual users and SMBs — limited engagement tools, no analytics, and poor discoverability. Proposed polls, scheduled posts, CTA buttons, and selective sharing to drive engagement among 450M+ Status users.",
+      "Analyzed pain points in WhatsApp Status across casual posters, power users, and SMBs — limited engagement tools, no analytics, and poor discoverability. Proposed polls, scheduled posts, CTA buttons, mentions/tagging, and selective sharing to drive engagement among 500M+ Status users.",
     metrics: [
       { label: "Global Users", value: "3B+" },
-      { label: "Status Users", value: "450M+" },
-      { label: "Countries", value: "180" },
+      { label: "Status Users", value: "500M+" },
+      { label: "Daily Messages", value: "100B+" },
     ],
     pdf: "/case-studies/Whatsapp_Status.pdf",
   },
@@ -36,11 +36,11 @@ const projects = [
     subtitle: "Tackling Decision Fatigue in E-Commerce",
     tags: ["E-Commerce", "Decision Science", "UX/UI"],
     description:
-      "Explored how excessive product choices on Amazon cause decision fatigue, leading to 35% cart abandonment and 56% visitor drop-off. Proposed AI-powered curated shortlists, smarter filters, and trust-verified reviews to simplify purchasing decisions.",
+      "Explored how excessive product choices on Amazon cause cognitive overload and decision fatigue, leading to 35% cart abandonment and 56% visitor drop-off before viewing product details. Proposed AI-powered curated shortlists, smarter filters, and trust-verified reviews to simplify purchasing decisions.",
     metrics: [
       { label: "Cart Abandonment", value: "35%" },
-      { label: "Filter Dissatisfied", value: "44%" },
-      { label: "Distrust Reviews", value: "75%" },
+      { label: "Visitor Drop-off", value: "56%" },
+      { label: "Review Distrust", value: "75%" },
     ],
     pdf: "/case-studies/Amazon_Decision_Fatigue.pdf",
   },
@@ -50,11 +50,11 @@ const projects = [
     subtitle: "Scaling Quick Commerce Leadership",
     tags: ["Quick Commerce", "Growth Strategy", "Competitive Analysis"],
     description:
-      "Strategic analysis of Blinkit's 45% market share dominance in quick commerce. Identified AOV gap vs Zepto (₹460 vs ₹607), proposed subscription models, city expansion, and dark-store optimisation to strengthen unit economics and retention.",
+      "Strategic analysis of Blinkit's 45% market share dominance in quick commerce with 639 dark stores across 39 cities. Identified AOV gap vs Zepto (₹460 vs ₹607), proposed subscription models, city expansion, and dark-store optimisation to strengthen unit economics and retention.",
     metrics: [
       { label: "Market Share", value: "45%" },
       { label: "Dark Stores", value: "639" },
-      { label: "Avg Delivery", value: "9 min" },
+      { label: "Daily Orders", value: "6L+" },
     ],
     pdf: "/case-studies/Blinkit_Product_Strategy.pdf",
   },
