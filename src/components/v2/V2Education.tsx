@@ -8,7 +8,7 @@ const education = [
 const certifications = [
   { name: "SAFe 6 PO/PM", year: "2024" },
   { name: "Post Graduate Program in Cloud Computing", year: "2023" },
-  { name: "Certified Scrum Master", year: "2023" },
+  { name: "AI Product Manager", year: "2023" },
   { name: "Product Management", year: "2022" },
 ];
 

@@ -17,7 +17,7 @@ const V2Hero = () => (
         transition={{ duration: 0.9 }}
       >
         <p className="text-v2-accent font-bold text-sm tracking-[0.3em] uppercase mb-4">
-          Product Owner · Scrum Master · 11+ Years
+          Product Owner · AI Product Manager · 11+ Years
         </p>
         <h1 className="font-v2-heading text-6xl sm:text-8xl lg:text-9xl font-black leading-[0.85] tracking-tighter mb-8">
           Raj
