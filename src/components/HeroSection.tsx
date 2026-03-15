@@ -19,7 +19,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="text-primary-foreground/70 font-body text-lg mb-2 tracking-widest uppercase">
-            Product Owner &bull; Scrum Master
+            Product Owner &bull; AI Product Manager
           </p>
           <h1 className="font-display text-5xl md:text-7xl font-bold text-primary-foreground leading-tight mb-6">
             Raj Narayan<br />

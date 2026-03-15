@@ -7,7 +7,7 @@ const skillCategories = [
   },
   {
     title: "Agile & Frameworks",
-    skills: ["Scrum Master", "SAFe 6 PO/PM", "Sprint Planning", "Release Management", "SDLC", "Design Thinking", "Lean Startup"],
+    skills: ["AI Product Manager", "SAFe 6 PO/PM", "Sprint Planning", "Release Management", "SDLC", "Design Thinking", "Lean Startup"],
   },
   {
     title: "AI / ML & Data",
